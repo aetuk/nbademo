@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><html class="no-js" lang="en"><![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width" />
+<link rel="apple-touch-icon" href="http://www.boomdesign.co.uk/apple-touch-icon.png"/>
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/base.css">
+<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/CBHead.css">
+<link rel="stylesheet" type="text/css" media="print" href="stylesheets/print.css">
+
+<script src="javascripts/modernizr.foundation.js"></script>
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/foundation.js"></script>
+<script src="javascripts/nag.js"></script>
+<script src="javascripts/utils.js"></script>
+<script src="javascripts/ajax-scripts.js"></script>
+<script type="text/javascript" src="http://webandserver.tru.io/ws/js/nbaadservclient.js"></script> 
+<!-- <script src="../../NbaAdservClient/Web/nbaadservclient.js"></script> -->
+<script src="javascripts/jquery-ui.js"></script>
+
+
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="javascripts/html5.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body class="personal">
+<div id="dialog-message" style="display:none;" title="Apply Confirm">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float: left; margin: 0 7px 50px 0;"></span>
+    <b>Thank you!</b> We will be in contact shortly.
+  </p>
+</div>
+
+<div class="container top-nav-bg" style="vertical-align:top;">
+
+<div class="row" style="vertical-align:top;" >
+<div class="nine columns phone-two" style="border:none;vertical-align:top;">
+<a href="#" title="Oaktree Bank - We care about here" >
+	<!-- <img src="images/headerlogo.png" alt="Oaktree Bank" width="103" height="151" style="margin-bottom:20px;" /> -->
+	<img src="images/headerlogo.png" alt="Oaktree Bank" style="margin-bottom:20px;" />
+</a>
+	
+	
+	<span id="WelcomeBannerImg" style="float:right;width:63%;border:none;vertical-align:top;"></span>
+	
+	<span style="vertical-align:25px;">
+	<span id="WelcomeBannerText" style="border-bottom-color: rgb(85, 85, 85);border-bottom-style: none;border-bottom-width: 0px;border-image-outset: 0px;border-image-repeat: stretch;border-image-slice: 100%;border-image-source: none;border-image-width: 1;border-left-color: rgb(85, 85, 85);border-left-style: none;border-left-width: 0px;border-right-color: rgb(85, 85, 85);border-right-style: none;border-right-width: 0px;border-top-color: rgb(85, 85, 85);border-top-style: none;border-top-width: 0px;color: rgb(85, 85, 85);font-family: NAG, Arial, sans-serif;font-size: 28px;font-style: normal;font-variant: normal;font-weight: normal;height: 30px;letter-spacing: normal;line-height: 30px;vertical-align: inherit;"></span>
+	</span>
+</div>
+<div class="three columns ie6-no-right-margin phone-two text-right">
+
+<div style="visibility:hidden;">
+	<p class="show-on-desktops">Text Size: 
+		<a href="#">
+			<span class="smallish">T</span>
+		</a>
+		<a href="#" >
+			<span class="bigger">T</span>
+		</a>
+	</p>
+</div>
+
+<p>
+	<select style="width:100%;" id="customersList"></select>
+</span></a></p>
+<h6>
+	<span id="CurrentDateTime"></span>
+</h6>
+</div>
+</div>
+
+</div>
+
+<div id="mobile-nav" class="show-on-phones container">
+<a href="#" >Menu</a>
+</div>
+<div id="mobile-nav-menu" class="container section-nav-bg">
+<div class="row">
+
+<div class="nine columns">
+<ul class="nav-bar">
+<li class="active"><a href='#'>Account Info</a></li>
+<li><a href="CBNewFundsTransfer.html">Payments</a></li>
+<li><a href='#'>Contact Us</a></li>
+<li><a href='#'>Administration</a></li>
+</ul>
+</div>
+
+<div class="three columns ie6-no-right-margin hide-on-phones">
+<ul class="nav-bar" id="trmenu">
+<li><a href='#'>Print</a></li>
+<li><a href='#'>Export</a></li>
+<li><a href='#'>Logout</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div id="mobile-nav-left" class="show-on-phones container">
+<a href="#" >Account Info</a>
+</div>
+
+<div id="mobile-nav-left-show" class="container hide">
+<div class="row">
+<div id="mobileleftnav">
+<!-- -->
+</div>
+</div>
+</div>
+
+<br />
+
+<div class="container">
+
+<div class="row">
+
+<div class="three columns hide-on-phones" id="leftnav">
+
+
+
+<ul id="secondarynavskip" class="nav-bar vertical"><!-- -->
+<li class="Level4"><a href="#" class="active">Account Balances</a></li>
+<li class="Level4"><a href="#">Transaction History</a></li>
+<li class="Level4"><a href="#">Account Details</a></li>
+<li class="Level4"><a href="#">Re-order Book</a></li>
+<li class="Level4"><a href="#">Order Statement</a></li>
+</ul>
+
+</div>
+
+<div class="six columns">
+<h4>Messages</h4>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Inbox</a></li>
+    <li><a href="#tabs-2">Message</a></li>
+  </ul>
+  <div id="tabs-1">
+	  <div id="OnlineMsgInboxContainer">
+		<table>
+			<thead>
+				<tr>
+					<td>
+						<strong>Subject</strong>
+					</td>
+				</tr>
+			</thead>
+			<tbody id="OnlineMsgInboxBody">
+			<tr><td>No messages.</td></tr>
+			</tbody>
+		</table>
+	</div>
+  </div>
+  <div id="tabs-2">
+  	<table>
+			<thead>
+				<tr>
+					<td colspan="2">
+						<strong>Message body</strong>
+					</td>
+				</tr>
+			</thead>
+			<tbody id="OnlineMsgMessageBody">
+			
+			</tbody>
+		</table>
+  </div>
+</div>
+
+<br>
+
+
+
+
+<h4>Account balances</h4>
+<table>
+<thead>
+<tr><td width="30%"><a href="#"><strong>Account nickname</strong></a> ^</td><td><strong>Account number</strong></td><td>
+<strong>Current balance*</strong></td></tr>
+</thead>
+<tbody>
+<tr><td><a href="#">CURRENT ACCOUNT</a></td><td><span id="AccNoCurrent"></span></td>
+	<td style="white-space:nowrap;"><span id="CurrentAccountBalance"></span>&nbsp; <span id="CurrentAccountBalanceSuffix"></span>
+	</td></tr>
+<tr><td><a href="#">MASTERCARD</a></td><td><span id="AccNoMastercard"></span></td><td ><span id="CreditCardBalance"></span>&nbsp; <span id="CreditCardBalanceSuffix"></span></td></tr>
+<tr><td><a href="#">SAVINGS</a></td><td><span id="AccNoSavings"></span></td><td ><span id="CurrentSavingBalance"></span>&nbsp; <span id="CurrentSavingBalanceSuffix"></span></td></tr>
+<tr id="PromotionProductRow" style="display:none;">
+	<td style="text-align:center;" id="PromotionProductImage">
+	</td>
+	<td id="PromotionProductShortDescription" colspan="2" text-align="center">
+	</td>
+</tr>
+</tbody>
+</table>
+<p>* This balance may include uncleared funds e.g. a deposited cheque.</p>
+<p>* Personal Loan balances may exclude fees and interest charges on any overdue installments. If you require an up to date settlement figure please contact us.</p>
+
+<div class="row">
+<div class="six columns">
+<!-- -->
+</div>
+<div class="six columns ie6-no-right-margin">
+<table>
+<tbody>
+<tr><td><strong>Total credit balance:</strong></td><td><span id="TotalCreditBalance"></span>&nbsp;<span id="TotalCreditBalanceSuffix"></span></td></tr>
+<tr><td><strong>Total debit balance:</strong></td><td><span id="TotalDebitBalance"></span>&nbsp;<span id="TotalDebitBalanceSuffix"></span></td></tr>
+<tr><td><strong>Net position:</strong></td><td><span id="NetPosition"></span>&nbsp;<span id="NetPositionSuffix"></span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="three columns ie6-no-right-margin">
+
+<!-------------------------------------- REMOVE TO ADD BOX BACK IN-------------------------
+<div class="headed-box">
+<h4>Important Information</h4>
+<div>
+<a href="#" class="medium nag nice button round"><span id="OnlineMsgInboxNumber"></span> new message(s)</a>
+<p>Last login <strong>15/07/13 10:13 AM</strong></p>
+</div>
+</div>
+------------------------------------------------------------------------------------------->
+
+<div class="headed-box">
+<h4>Need Help?</h4>
+<div>
+<a href="#" class="medium white nice button round">Visit our Oaktree Bank Help Centre<span class="arrow"><!-- --></span></a>
+</div>
+</div>
+<div id="RightHandBannerContainer">
+	<div class="tile-ad">
+		<h3><span id="rightHandBannerText"></span></h3>
+		<span id="rightHandBannerImg"></span>
+	</div>
+
+</div>
+</div>
+
+</div>
+
+</div><!-- End Container -->
+
+
+
+
+        
+<div class="container hide-on-phones bcrumbs">
+<div class="row">
+<p>You are here:&nbsp;<a href="#">Account Info</a>&nbsp;&gt;&nbsp;<a href="#">Account Balances</a></p>
+</div>
+</div>
+
+
+
+
+<div class="container bottom-bar">
+<div class="row">
+<p class="text-center">You can find impartial information and guidance on money matters on the "<a rel="nofollow" target="_blank" href="http://www.moneyadviceservice.org.uk">Money advice service</a>" website.<br>Oaktree Bank is covered by the Financial Services Compensation Scheme (FSCS), <a title="Find out more" href="http://www.cbonline.co.uk/personal/savings/compensation-scheme" target="_blank">Find out more</a>.</p>
+</div>
+</div>
+
+</body>
+</html>

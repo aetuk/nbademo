@@ -1,0 +1,5 @@
+Inserted at line 1099 in base.css to target IE7 and below
+.lt-ie8 legend,.lt-ie8 .input-text{position:relative;left:-11px}
+
+At line 838 in base.css
+Added display:block to form.nice legend declaration
