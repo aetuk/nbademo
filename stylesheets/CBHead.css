@@ -1,0 +1,294 @@
+/* HIDE LEVEL 1 AND NON-ACTIVE LEVEL 2 FROM PERSONAL-BUSINESS-PRIVATE */
+.personal .nav-bar .Level2, .business .nav-bar .Level2, .private .nav-bar .Level2 {display:none;}
+.personal .nav-bar .Level3 a, .business .nav-bar .Level3 a, .private .nav-bar .Level3 a {display:none;}
+.personal .vertical a.active, .business .vertical a.active, .private .vertical a.active {display:block}
+
+/* HIDE LEVEL 1 EXCEPT ACTIVE */
+.personal .vertical .Level2 a, .business .vertical .Level2 a, .private .vertical .Level2 a {display:none}
+.vertical .active a {display:block}
+
+/* STYLING OF LEFT HAND NAVS */
+.personal .vertical .Level3 a, .business .vertical .Level3 a, .private .vertical .Level3 a {padding-left:15px}
+.vertical .Level3 a, .personal .vertical .Level4 a, .business .vertical .Level4 a, .private .vertical .Level4 a {padding-left:15px}
+.vertical .Level4 a, .personal .vertical .Level5 a, .business .vertical .Level5 a, .private .vertical .Level5 a {padding-left:30px}
+.vertical .Level5 a, .personal .vertical .Level6 a, .business .vertical .Level6 a, .private .vertical .Level6 a {padding-left:45px}
+.vertical .Level6 a, .personal .vertical .Level7 a, .business .vertical .Level7 a, .private .vertical .Level7 a {padding-left:60px}
+
+.row .vertical li {background:#f0f0f0;border:none}
+.row .vertical li a {color:#333;border-bottom:1px solid #d6d6d6;border-top:1px solid #fff}
+.row .vertical {border-top:1px solid #d6d6d6}
+@media only screen and (max-width: 767px) {
+.row .vertical {border-top:1px solid #fff}
+}
+.row .vertical li a:hover {color:#333;background-color:#e5e5e5}
+.personal .vertical .Level3 a, .business .vertical .Level3 a, .private .vertical .Level3 a, .vertical .Level2 a {background:#f0f0f0;color:#333}
+.personal .vertical .Level3 a.active, .business .vertical .Level3 a.active, .private .vertical .Level3 a.active, .vertical .Level2 a.active {background:#f0f0f0;color:#333;font-weight:bold}
+.personal .vertical .Level4 a, .business .vertical .Level4 a, .private .vertical .Level4 a, .vertical .Level3 a {background:#f0f0f0;color:#333}
+.personal .vertical .Level4 a.active, .vertical .Level3 a.active {background:#009900;font-weight:bold;color:#fff}
+.business .vertical .Level4 a.active {background:#303030;font-weight:bold;color:#fff}
+.private .vertical .Level4 a.active {background:#4c4c4c;font-weight:bold;color:#fff}
+.personal .vertical .Level5 a, .business .vertical .Level5 a, .private .vertical .Level5 a, .vertical .Level4 a {background:#fff url(../images/cb/nav-grey-bullet.gif) no-repeat 15px center;color:#333}
+.personal .vertical .Level5 a.active, .business .vertical .Level5 a.active, .private .vertical .Level5 a.active, .vertical .Level4 a.active {font-weight:bold;background:#fff url(../images/cb/nav-red-active-bullet.gif) no-repeat 15px center;color:#333}
+.personal .vertical .Level6 a, .business .vertical .Level6 a, .private .vertical .Level6 a, .vertical .Level5 a {background:#fff url(../images/cb/nav-grey-bullet.gif) no-repeat 30px center;color:#333}
+.personal .vertical .Level6 a.active, .business .vertical .Level6 a.active, .private .vertical .Level6 a.active, .vertical .Level5 a.active {font-weight:bold;background:#fff url(../images/cb/nav-red-active2-bullet.gif) no-repeat 30px center;color:#333}
+.personal .vertical .Level7 a, .business .vertical .Level7 a, .private .vertical .Level7 a, .vertical .Level6 a {background:#fff url(../images/cb/nav-grey-bullet.gif) no-repeat 45px center;color:#666}
+.personal .vertical .Level7 a.active, .business .vertical .Level7 a.active, .private .vertical .Level7 a.active, .vertical .Level6 a.active {font-weight:bold;background:#fff url(../images/cb/nav-red-active2-bullet.gif) no-repeat 45px center;color:#666}
+
+/* FOR BLANK TOP NAV */
+#no-top-nav {height:20px;background:#009900;border-top:1px solid #C7251B; border-bottom:1px solid #C7251B}
+.personal #no-top-nav, .private #no-top-nav, .business #no-top-nav {display:none}
+
+/*HEADERNAV*/
+#ibnav .contact-but-bg{background: #fff url(../images/cb/cb-icon-contact.png) no-repeat 15px center;padding-left:45px}
+#ibnav .login-but-bg{background: #fff url(../images/cb/cb-icon-branch.gif) no-repeat 15px center;padding-left:45px}
+
+/*TOP LEFT NAV*/
+#logo-bar {padding:0 10px 20px}
+#tlnav{font-family:Arial,sans-serif}
+#tlnav .login-bg-r{border:1px solid #dfdede;border-bottom:none;background-color:#ececec;box-shadow:0 1px 0 rgba(255, 255, 255, 0.3) inset;
+background-image: linear-gradient(bottom, rgb(248,248,248) 0%, rgb(234,233,233) 100%);
+background-image: -o-linear-gradient(bottom, rgb(248,248,248) 0%, rgb(234,233,233) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(248,248,248) 0%, rgb(234,233,233) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(248,248,248) 0%, rgb(234,233,233) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(248,248,248) 0%, rgb(234,233,233) 100%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(248,248,248)),color-stop(1, rgb(234,233,233)));
+}
+#tlnav .login-bg-r a{color:#333}
+#tlnav .login-bg-p{border:1px solid #5a5a5a;border-bottom:none;background:#797979;box-shadow:0 1px 0 rgba(255, 255, 255, 0.3) inset;
+background-image: linear-gradient(bottom, rgb(90,90,90) 0%, rgb(114,114,114) 100%);
+background-image: -o-linear-gradient(bottom, rgb(90,90,90) 0%, rgb(114,114,114) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(90,90,90) 0%, rgb(114,114,114) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(90,90,90) 0%, rgb(114,114,114) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(90,90,90) 0%, rgb(114,114,114) 100%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(90,90,90)),color-stop(1, rgb(114,114,114)));
+}
+#tlnav .login-bg-b{border:1px solid #000000;border-bottom:none;background:#161616;box-shadow:0 1px 0 rgba(255, 255, 255, 0.3) inset;
+background-image: linear-gradient(bottom, rgb(22,22,22) 0%, rgb(56,56,56) 100%);
+background-image: -o-linear-gradient(bottom, rgb(22,22,22) 0%, rgb(56,56,56) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(22,22,22) 0%, rgb(56,56,56) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(22,22,22) 0%, rgb(56,56,56) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(22,22,22) 0%, rgb(56,56,56) 100%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(22,22,22)),color-stop(1, rgb(56,56,56)));
+}
+#tlnav .login-bg a:hover{color:#ddd}
+#tlnav .login-bg-r a:hover{color:#000}
+
+/*PERSONAL NAV*/
+#no-top-nav,.personal .section-nav-bg{border-top:1px solid #dfdede;border-bottom:1px solid #dfdede;
+background-color:#ececec;
+background-image: linear-gradient(bottom, rgb(236,236,236) 0%, rgb(248,248,248) 100%);
+background-image: -o-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(248,248,248) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(248,248,248) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(248,248,248) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(248,248,248) 100%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(236,236,236)),color-stop(1, rgb(248,248,248)));
+}
+.personal .section-nav-bg ul.nav-bar li {background:none;border-right:1px solid #B5C7A4;border-left:1px solid #fff;border-bottom:none;border-top:none}
+.personal .section-nav-bg ul.nav-bar li:hover {border-right:1px solid #B5C7A4;border-left:1px solid #B5C7A4;background-color:#3e3e3e}
+.personal .section-nav-bg ul.nav-bar li.active {border-right:1px solid #B5C7A4;border-left:1px solid #B5C7A4;background-color:#009900}
+.personal .section-nav-bg ul.nav-bar li a{color:#333}
+.personal .section-nav-bg ul.nav-bar li:hover a,.personal .section-nav-bg ul.nav-bar li.active a{color:#fff}
+@media only screen and (max-width: 767px) {
+.personal .section-nav-bg{border-top:2px solid #fff}
+.personal #mobile-nav-menu ul.nav-bar li {border:none;background:#ececec}
+.personal #mobile-nav-menu ul.nav-bar li.active, .personal #mobile-nav-menu ul.nav-bar li:hover {background:#303030}
+.personal .section-nav-bg {background:#ececec}
+}
+
+/*PRIVATE NAV*/
+.private .section-nav-bg {background-color:#797979;border-top:1px solid #5a5a5a;border-bottom:1px solid #5a5a5a;
+background-image: linear-gradient(bottom, rgb(121,121,121) 0%, rgb(90,90,90) 100%);
+background-image: -o-linear-gradient(bottom, rgb(121,121,121) 0%, rgb(90,90,90) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(121,121,121) 0%, rgb(90,90,90) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(121,121,121) 0%, rgb(90,90,90) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(121,121,121) 0%, rgb(90,90,90) 100%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(121,121,121)),color-stop(1, rgb(90,90,90)));
+}
+.private .section-nav-bg ul.nav-bar li {background:none;border-left:1px solid #818181;border-right:1px solid #575757;border-bottom:none;border-top:none}
+.private .section-nav-bg ul.nav-bar li:hover {border-left:1px solid #4F4E4E;border-right:1px solid #111;background-color:#383838}
+.private .section-nav-bg ul.nav-bar li.active {border-left:1px solid #4F4E4E;border-right:1px solid #111;background-color:#292929}
+@media only screen and (max-width: 767px) {
+.private #mobile-nav-menu ul.nav-bar li {border:none;background:#3e3e3e}
+.private #mobile-nav-menu ul.nav-bar li.active, .personal #mobile-nav-menu ul.nav-bar li:hover {background:#303030}
+.private .section-nav-bg {background:#3e3e3e}
+.private #mobile-nav {background-color:#909090}
+}
+
+/*BUSINESS NAV*/
+.business .section-nav-bg {background-color:#2d2d2d;border-top:1px solid #000;border-bottom:1px solid #000;
+background-image: linear-gradient(bottom, rgb(45,45,45) 0%, rgb(22,22,22) 100%);
+background-image: -o-linear-gradient(bottom, rgb(45,45,45) 0%, rgb(22,22,22) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(45,45,45) 0%, rgb(22,22,22) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(45,45,45) 0%, rgb(22,22,22) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(45,45,45) 0%, rgb(22,22,22) 100%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(45,45,45)),color-stop(1, rgb(22,22,22)));
+}
+.business .section-nav-bg ul.nav-bar li {background:none;border-left:1px solid #5a5a5a;border-right:1px solid #000;border-bottom:none;border-top:none}
+.business .section-nav-bg ul.nav-bar li:hover {border-left:1px solid #4F4E4E;border-right:1px solid #111;background-color:#3E3E3E}
+.business .section-nav-bg ul.nav-bar li.active {border-left:1px solid #4F4E4E;border-right:1px solid #111;background-color:#4E4E4E}
+@media only screen and (max-width: 767px) {
+.business #mobile-nav-menu ul.nav-bar li {border:none;background:#3e3e3e}
+.business #mobile-nav-menu ul.nav-bar li.active, .personal #mobile-nav-menu ul.nav-bar li:hover {background:#444}
+.business .section-nav-bg {background:#3e3e3e}
+.business #mobile-nav {background-color:#444}
+}
+
+/*RHS HEADERS*/
+.business div.headed-box h4, .business #mortgagepage1 legend {color:#fff;
+background-image:linear-gradient(bottom, rgb(51,51,51) 16%, rgb(71,71,71) 60%);
+background-image:-o-linear-gradient(bottom, rgb(51,51,51) 16%, rgb(71,71,71) 60%);
+background-image:-moz-linear-gradient(bottom, rgb(51,51,51) 16%, rgb(71,71,71) 60%);
+background-image:-webkit-linear-gradient(bottom, rgb(51,51,51) 16%, rgb(71,71,71) 60%);
+background-image:-ms-linear-gradient(bottom, rgb(51,51,51) 16%, rgb(71,71,71) 60%);
+background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.16, rgb(51,51,51)),color-stop(0.6, rgb(71,71,71)));
+text-shadow: 0 -1px #000;
+}
+.private div.headed-box h4, .private #mortgagepage1 legend {color:#fff;
+background-image:linear-gradient(bottom, rgb(76,76,76) 16%, rgb(115,115,115) 60%);
+background-image:-o-linear-gradient(bottom, rgb(76,76,76) 16%, rgb(115,115,115) 60%);
+background-image:-moz-linear-gradient(bottom, rgb(76,76,76) 16%, rgb(115,115,115) 60%);
+background-image:-webkit-linear-gradient(bottom, rgb(76,76,76) 16%, rgb(115,115,115) 60%);
+background-image:-ms-linear-gradient(bottom, rgb(76,76,76) 16%, rgb(115,115,115) 60%);
+background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.16, rgb(76,76,76)),color-stop(0.6, rgb(115,115,115)));
+text-shadow: 0 -1px #5a5a5a;
+}
+.lt-ie9 .business div.headed-box h4, .lt-ie9 .business #mortgagepage1 legend {background:#f8f8f8 url(/resources/c/5/c5732b804edf8bce95acbdca234c599f/b-rhs2.gif) repeat-x top left}
+.lt-ie9 .private div.headed-box h4, .lt-ie9 .private #mortgagepage1 legend {background:#f8f8f8 url(/resources/0/c/0c5e14004edf8b30958ebdca234c599f/pr-rhs2.gif) repeat-x top left}
+
+/*IBFLYOUT*/
+#ibflyout {padding:10px;background:#fff;border:1px solid #e1e1e1;font-family:Arial;border-radius:5px}
+#ibflyout h6{margin-top:5px;margin-left:8px}
+#ibflyout a:hover {color:#eee}
+#ibflyout li.if-direct {border-top:1px dotted #303030}
+#rib-login {width:48.6%}
+#ibflyout p {margin-bottom:0}
+#ibnav li.internet-but-bg{border:none;background-color:#009900;box-shadow:0 1px 0 rgba(255, 255, 255, 0.3) inset;
+background-image: linear-gradient(bottom, rgb(148,48,52) 0%, rgb(238,50,36) 60%);
+background-image: -o-linear-gradient(bottom, rgb(148,48,52) 0%, rgb(238,50,36) 60%);
+background-image: -moz-linear-gradient(bottom, rgb(148,48,52) 0%, rgb(238,50,36) 60%);
+background-image: -webkit-linear-gradient(bottom, rgb(148,48,52) 0%, rgb(238,50,36) 60%);
+background-image: -ms-linear-gradient(bottom, rgb(148,48,52) 0%, rgb(238,50,36) 60%);
+background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(148,48,52)),color-stop(0.6, rgb(238,50,36)));
+}
+#ibnav li.internet-but-bg a{color:#fff}
+#ibnav li.internet-but-bg div a.button{color:#333;display:block}
+
+/*PLCALCSTYLES*/
+table.plcalc-style {border:none}
+table.plcalc-style tbody tr td {border:none;vertical-align:middle}
+table.plcalc-style tbody tr td input.input-text {margin-bottom:0}
+#loan-form label, #repay-form label {margin-bottom:0}
+#amount-field{width:100%}
+.lt-ie8 #amount-field{width:200px}
+
+/*ONLINE ONLY MORTGAGE TABLE STYLE*/
+#mortgagepage2 table tbody tr.direct td {background:#b5cb31;color:#fff}
+
+/*SITEWIDE FONT COLOURS*/
+.private a,.business a,a,dl.tabs dd a,#ibnav li.internet-but-bg #ibflyout a{color:#009900}
+.private .nice.black.button,.business .nice.black.button{color:#fff}
+h1{color:#555}
+.private h1 {color:#636563}
+.business h1 {color:#000}
+.private .subheader {color:#000}
+.private table .label{background:#666}
+.private table .label a{color:#fff}
+.business #mobile-nav a,.private #mobile-nav a{color:#fff}
+.business .small,.business small{font-size:90%}
+
+/*FOOTER*/
+.bottom-bar{
+	background-color: #999999;
+}
+.private .bottom-bar{background:#5b5b5b;border-color:#999}
+.business .bottom-bar{background:#1c1c1c;border-color:#444}
+div hr.dashed-m{margin:-4px 0 12px 0}
+hr.solidbar{border-color:#009900;border-width: 4px 0 0;margin-top:0}
+
+/*COOKIES*/
+#cookies {text-align:center;font-weight:normal;padding:6px 30px 7px;margin-bottom:0;display:none}
+#cookies .close {background:#000;border-radius:1000px;color:#FFF;font-size:18px;height:20px;line-height:20px;margin-top:-10px;opacity:1;padding:0;position:absolute;right:5px;text-align:center;top:50%;width:20px}
+#cookies .close{display:none}
+.js #cookies .close{display:block}
+
+/*BUTTONARROWS*/
+.medium .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/medium-button-white-arrow.png) no-repeat center center
+}
+.large .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/large-button-white-arrow.png) no-repeat center center
+}
+.medium.white .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/cb-medium-button-arrow.png) no-repeat center center
+}
+.large.white .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/cb-large-button-arrow.png) no-repeat center center
+}
+.private .medium.white .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/private-medium-button-arrow.png) no-repeat center center
+}
+.private .large.white .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/private-large-button-arrow.png) no-repeat center center
+}
+.business .medium.white .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/business-medium-button-arrow.png) no-repeat center center
+}
+.business .large.white .arrow{display:block;position:absolute;top:50%;right:5px;height:25px;width:25px;padding:0;margin:-13px 0 0 0;
+background: url(../images/cb/business-large-button-arrow.png) no-repeat center center
+}
+
+ul.tick li {
+list-style-image:url(../images/cb/CB-tick.png); margin-left:25px;
+}
+
+/*FOOTERSLIDER*/
+#bmenu .apply-online.active{background-image:url(../images/cb/footer-icon-apply-active-cb.gif)}
+#bmenu .calculators.active{background-image:url(../images/cb/footer-icon-calculator-active-cb.gif)}
+#bmenu .interest-rates.active{background-image:url(../images/cb/footer-icon-rates-active-cb.gif)}
+#bmenu .latest-news.active{background-image:url(../images/cb/footer-icon-news-active-cb.gif)}
+
+/*RHS Icons*/
+.iconpanelphone, div.headed-box .iconpanelphone{background-image:url(../images/cb/cb-icon-contact.png);background-position:10px 8px}
+
+/*TABS*/
+dl.tabs dd a.active {
+background-color:#c3180a;
+background-image:linear-gradient(bottom, rgb(150,0,25) 0%, rgb(225,40,0) 100%);
+background-image:-o-linear-gradient(bottom, rgb(150,0,25) 0%, rgb(225,40,0) 100%);
+background-image:-moz-linear-gradient(bottom, rgb(150,0,25) 0%, rgb(225,40,0) 100%);
+background-image:-webkit-linear-gradient(bottom, rgb(150,0,25) 0%, rgb(225,40,0) 100%);
+background-image:-ms-linear-gradient(bottom, rgb(150,0,25) 0%, rgb(225,40,0) 100%);
+background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(150,0,25)),color-stop(0.99, rgb(225,40,0)));
+}
+
+@media only screen and (max-width: 767px) {
+.dpl-eligiblity-popup label{display:block}
+}
+
+/* DPL Landing Pages */
+
+
+.calc-controls-landing-page-display {background-image:url(../images/cb/dpl-landing-display-txt191212.gif);
+  height: 239px;
+    margin-bottom: 6px;
+    padding: 0;
+    width: 660px;
+    margin: 0;
+}
+
+.dpl-msm-pos {position: relative; z-index: 10; margin-top: -102px; margin-bottom: 40px;}
+
+#trmenu li {float:right;padding:0 10px}
+
+#ie8legend{margin:0;padding:0}
+#ie8legend legend {width:98%}
+
+@media only screen and (max-width: 939px) {
+form.nice .input-text.inline.helpafter{width:95%;display:inline-block;margin-bottom:10px}
+}
+
+/*NAG BUTTONS*/
+.nag.button {background-color:#c3180a}
+.nice.nag.button {background-color:#009900;}
+.nice.nag.button:hover {background: #006600;}
+.nag.button:hover, .nag.button:focus {background-color:#009900;}
